@@ -15,6 +15,10 @@ module OmniAuth
         :token_url => '/oauth2/v1/Authorize',
       }
 
+      def callback_url
+        options[:redirect_uri] || (full_host + script_name + callback_path)
+      end
+
       uid { raw_info['uid'] }
 
       info do

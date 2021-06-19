@@ -2,14 +2,14 @@
 require File.expand_path(File.join('..', 'lib', 'omniauth', 'myob_oauth2', 'version'), __FILE__)
 
 Gem::Specification.new do |spec|
-  spec.add_dependency 'omniauth', '> 1.0'
+  spec.add_dependency 'omniauth', '> 2.0'
   
   spec.name          = "omniauth-myob-oauth2"
   spec.version       = OmniAuth::MyobOauth2::VERSION
   spec.authors       = ["Haiyang (harry) Gao"]
   spec.email         = ["foxgaocn@gmail.com"]
-  spec.description   = %q{A MYOB OAuth2 strategy for OmniAuth 1.x}
-  spec.summary       = %q{A MYOB OAuth2 strategy for OmniAuth 1.x}
+  spec.description   = %q{A MYOB OAuth2 strategy for OmniAuth 2.x}
+  spec.summary       = %q{A MYOB OAuth2 strategy for OmniAuth 2.x}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = `git ls-files -- {spec}/*`.split("\n")
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'omniauth-oauth2', '~> 1.1'
+  spec.add_runtime_dependency 'omniauth-oauth2', '~> 1.7'
   spec.add_development_dependency "rake"
 
 
